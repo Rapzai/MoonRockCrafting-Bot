@@ -1,0 +1,76 @@
+﻿<Window x:Class="MoonRockCrafting_Bot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoonRockCrafting_Bot"
+        mc:Ignorable="d"
+        Title="Moon Rock Bot" Height="450" Width="500">
+    <StackPanel Orientation="Vertical">
+        <!--Input-->
+        <!--Input Qty of Moon Rock-->
+        <StackPanel Margin="10" Orientation="Horizontal">
+            <Label VerticalAlignment="Center">Amount of Moon Rock to Craft : </Label>
+            <TextBox VerticalAlignment="Center" Width="100"/>
+        </StackPanel>
+        <!--Output-->
+        <!--Output Qty of Bronze-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Bronze :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+            
+        </StackPanel>
+        
+        
+        <!--Output Qty of Steel-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Steel :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Mithril-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Mithril :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Adamantium-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Adamantium :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Silver-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Silver :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Orichalon-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Orichalon :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Gold-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Gold :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+        
+        <!--Output Qty of Elixir of Purity-->
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <Label Width="100" VerticalAlignment="Center">Elixir of Purity :</Label>
+            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        </StackPanel>
+        
+       <!--Button-->
+        <Button Margin="10">Star Bot</Button>
+    </StackPanel>
+</Window>
