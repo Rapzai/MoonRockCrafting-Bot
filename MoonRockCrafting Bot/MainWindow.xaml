@@ -10,7 +10,7 @@
         <!--Input-->
         <!--Input Qty of Moon Rock-->
         <StackPanel Margin="10" Orientation="Horizontal">
-            <Label VerticalAlignment="Center">Amount of Moon Rock to Craft : </Label>
+            <Label VerticalAlignment="Center">Amount of Moon Rock : </Label>
             <TextBox VerticalAlignment="Center" Width="100"/>
         </StackPanel>
         <!--Output-->
