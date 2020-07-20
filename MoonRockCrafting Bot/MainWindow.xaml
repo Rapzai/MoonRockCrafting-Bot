@@ -5,72 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoonRockCrafting_Bot"
         mc:Ignorable="d"
-        Title="Moon Rock Bot" Height="450" Width="500">
-    <StackPanel Orientation="Vertical">
-        <!--Input-->
-        <!--Input Qty of Moon Rock-->
-        <StackPanel Margin="10" Orientation="Horizontal">
-            <Label VerticalAlignment="Center">Amount of Moon Rock : </Label>
-            <TextBox VerticalAlignment="Center" Width="100"/>
-        </StackPanel>
-        <!--Output-->
-        <!--Output Qty of Bronze-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Bronze :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
+        Title="Moon Rock Bot" Height="520" Width="500" ResizeMode="NoResize">
+    <StackPanel>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+
+            <Label Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left">Amount of Moon Rock :</Label>
+            <TextBox Grid.Column="1" VerticalAlignment="Center"/>
+            <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">BM</Label>
+            <Label Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold">DM</Label>
+
+            <!--Material Name-->
+            <Label Grid.Row="2" VerticalAlignment="Center">Bronze :</Label>
+            <Label Grid.Row="3" VerticalAlignment="Center">Steel :</Label>
+            <Label Grid.Row="4" VerticalAlignment="Center">Mithril :</Label>
+            <Label Grid.Row="5" VerticalAlignment="Center">Adamantium :</Label>
+            <Label Grid.Row="6" VerticalAlignment="Center">Silver :</Label>
+            <Label Grid.Row="7" VerticalAlignment="Center">Orichalon :</Label>
+            <Label Grid.Row="8" VerticalAlignment="Center">Gold :</Label>
+            <Label Grid.Row="9" VerticalAlignment="Center">Elixir of Purity :</Label>
+
+            <!--BM Box-->
+            <TextBox Margin="2" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="4" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="5" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="6" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="7" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="8" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+
+
+            <!--DM Box-->
+            <TextBox Margin="2" Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="4" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="5" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="7" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="8" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="9" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+
+            <!--Empty Column-->
+            <Label Height="15" Grid.Row="10" Background="Black"></Label>
+            <Label Height="15" Grid.Row="10" Grid.Column="1" Background="Black"></Label>
+            <Label Height="15" Grid.Row="10" Grid.Column="2" Background="Black"></Label>
+            <!--Mold Name-->
+            <Label Grid.Row="11" VerticalAlignment="Center">Basic:</Label>
+            <Label Grid.Row="12" VerticalAlignment="Center">Intermediate:</Label>
+            <Label Grid.Row="13" VerticalAlignment="Center">Advanced:</Label>
+            <Label Grid.Row="14" VerticalAlignment="Center">Superior:</Label>
+
+
+            <!--Mold Qty-->
+            <TextBox Margin="2" Grid.Row="11" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="12" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="13" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+            <TextBox Margin="2" Grid.Row="14" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsReadOnly="True" Background="#EEEEEE">0</TextBox>
+        </Grid>
+        
+        
+        
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Button Margin="20">Calculate Material</Button>
+            <Button Margin="20" Grid.Column="1">Run Bot</Button>
             
-        </StackPanel>
-        
-        
-        <!--Output Qty of Steel-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Steel :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Mithril-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Mithril :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Adamantium-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Adamantium :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Silver-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Silver :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Orichalon-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Orichalon :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Gold-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Gold :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-        
-        <!--Output Qty of Elixir of Purity-->
-        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
-            <Label Width="100" VerticalAlignment="Center">Elixir of Purity :</Label>
-            <TextBox Background="#EEEEEE" Padding="5 0 0 0" VerticalAlignment="Center" Width="100" IsReadOnly="True">0</TextBox>
-        </StackPanel>
-        
-       <!--Button-->
-        <Button Margin="10">Star Bot</Button>
+        </Grid>
+
     </StackPanel>
+
 </Window>
